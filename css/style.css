@@ -96,7 +96,7 @@ section.wrap {
 
 /* main */
 
-main.main {
+div.container {
     max-width: 980px;
     margin-inline: auto;
     background-color: #fff;
@@ -197,12 +197,16 @@ div.readMore {
     background-color: #fff;
 }
 
-div.newletter {
+div.newsletter {
     background-color: #db0059;
     padding: 1rem;
+}
+
+div.newletter {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #fff;
+    background-color: #db0059;
 }
 
 .newletter section.news {
@@ -262,15 +266,20 @@ footer.footer a {
 
 article.grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.3rem;
-    padding-block: 2rem;
-    padding-inline: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    grid-auto-rows: 200px;
 }
 
-section.img img {
+.grid img {
     max-width: 100%;
-    max-height: auto;
+    height: 100%;
+    border: 2px solid #1d1e3d;
+    object-fit: cover;
+}
+
+.rowspan-2 {
+    grid-row: span 2;
 }
 
 article.card {
@@ -318,7 +327,7 @@ section.card2 ul.card2 li i {
 }
 
 /* ************************************
-media queries pour tablette homme
+media queries pour tablette home
 ****************************************/
 
 @media screen and (min-width:760px) and (max-width:979px) {
@@ -329,7 +338,7 @@ media queries pour tablette homme
         margin-inline: auto;
     }
 
-    main.main {
+    div.container {
         max-width: 700px;
         margin-inline: auto;
     }
@@ -345,17 +354,6 @@ media queries pour tablette homme
     }
 }
 
-/* ************************************
-media queries pour tablette galerie
-****************************************/
-@media screen and (min-width:760px) and (max-width:979px) {
-
-    article.grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.3rem;
-    }
-}
 
 /* ************************************
 media queries pour mobile home
@@ -378,7 +376,7 @@ media queries pour mobile home
         font-size: 18px;
     }
 
-    main.main {
+    div.container {
         max-width: 500px;
         margin-inline: auto;
     }
@@ -398,18 +396,18 @@ media queries pour mobile home
 media queries pour mobile galerie
 ****************************************/
 @media screen and (max-width:759px) {
-
-    article.grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0.3rem;
+    div.container {
+        max-width: 500px;
+        margin-inline: auto;
     }
-    article.card{
+
+    article.card {
         flex-basis: 100%;
     }
+
     section.card1,
     section.card2 {
-   text-align: center;
-   flex-basis: 100%;
+        text-align: center;
+        flex-basis: 100%;
     }
 }
