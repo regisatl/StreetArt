@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    background-color: #ededed;
+    line-height: 1.5rem;
+}
+
+header.header {
+    max-width: 980px;
+    margin-inline: auto;
+    background-color: #fff;
+}
+
+/* style css de la page home se StreetArt */
+
+/* header */
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Mali';
+    font-size: 24px;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+header.header img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+ul.navbar {
+    display: flex;
+    gap: 0.2rem;
+    padding: 0;
+}
+
+ul.navbar li {
+    list-style: none;
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+ul.navbar li a:hover {
+    background-color: #ededed;
+    border-bottom: 2px solid #037d9d;
+    border-left: 2px solid #037d9d;
+    display: block;
+}
+
+ul.navbar li a.active {
+    background-color: #ededed;
+    border-bottom: 2px solid #037d9d;
+    border-left: 2px solid #037d9d;
+    display: block;
+}
+
+
+section.banner img {
+    max-width: 50%;
+    max-height: auto;
+    display: inline-block;
+    margin-inline: auto;
+}
+
+div.wrapper {
+    max-width: 100%;
+    max-height: auto;
+    margin-inline: auto;
+    position: relative;
+}
+
+section.wrap {
+    background-color: #ededed;
+    padding: 1rem 1.5rem;
+    color: #db0059;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Mali';
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* main */
+
+main.main {
+    max-width: 980px;
+    margin-inline: auto;
+    background-color: #fff;
+}
+
+section.citation {
+    display: flex;
+    justify-content: center;
+}
+
+blockquote {
+    text-align: center;
+    background-color: #ededed;
+    border-bottom: 2px solid #037d9d;
+    border-left: 2px solid #037d9d;
+    display: inline-block;
+    padding: 1rem;
+}
+
+blockquote q {
+    font-style: italic;
+    font-size: 25px;
+}
+
+cite {
+    font-style: normal;
+    font-size: 20px;
+}
+
+article.columnFlex,
+article.columnCard {
+    padding: 2rem 1rem;
+}
+
+section.card p em {
+    font-size: 14px;
+}
+
+section.column p em {
+    font-size: 14px;
+}
+
+.columnFlex div.title1,
+div.title2 {
+    text-align: center;
+}
+
+div.title1 i {
+    color: #037d9d;
+}
+
+div.title2 i {
+    color: #db0059;
+}
+
+div.flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section.column,
+section.card {
+    flex-basis: 50%;
+    padding: 1rem;
+    background-color: #ededed;
+}
+
+section.column h3 {
+    color: #037d9d;
+}
+
+section.card h3 {
+    color: #db0059;
+}
+
+section.column img,
+section.card img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+div.readMore {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.readMore a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1d1e3d;
+    padding: 1rem 1.5rem;
+    border: 1px solid #1d1e3d;
+}
+
+.readMore a:hover {
+    color: #1d1e3d;
+    background-color: #fff;
+}
+
+div.newletter {
+    background-color: #db0059;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.newletter section.news {
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 1rem;
+}
+
+section.news form input[type=email] {
+    width: 80%;
+    padding: 0.5rem;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+    color: #db0059;
+    margin-bottom: 1rem;
+    outline: 1px solid #ededed;
+}
+
+section.news form input[type=submit] {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    color: #db0059;
+    cursor: pointer;
+}
+
+section.news form input:hover[type=submit] {
+    background-color: #db0059;
+    color: #fff;
+}
+
+section.icons a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* footer */
+
+footer.footer {
+    background-color: #1f1c1c;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+footer.footer a img {
+    width: 50px;
+}
+
+footer.footer a {
+    color: #ff2a05;
+    text-decoration: none;
+}
+
+/* style css pour la page galerie */
+
+article.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+}
+
+section.img img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+article.card {
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 2rem 1rem;
+}
+
+
+section.card1,
+section.card2 {
+    flex-basis: 50%;
+    padding-block: 1rem;
+    background-color: #ededed;
+    padding-inline: 1rem;
+}
+
+div.title3 i {
+    color: #037d9d;
+}
+
+div.title3 {
+    text-align: center;
+}
+
+section.card1 ul.card1,
+section.card2 ul.card2 {
+    list-style: none;
+    padding: 0;
+}
+
+section.card1 ul.card1 li,
+section.card2 ul.card2 li {
+    margin-block: 1rem;
+}
+
+section.card1 ul.card1 li i {
+    font-size: 12px;
+    color: #db0059;
+}
+
+section.card2 ul.card2 li i {
+    font-size: 12px;
+    color: #037d9d;
+}
+
+/* ************************************
+media queries pour tablette homme
+****************************************/
+
+@media screen and (min-width:760px) and (max-width:979px) {
+
+    header.header {
+        flex-direction: column;
+        max-width: 700px;
+        margin-inline: auto;
+    }
+
+    main.main {
+        max-width: 700px;
+        margin-inline: auto;
+    }
+
+    div.flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.newletter {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ************************************
+media queries pour tablette galerie
+****************************************/
+@media screen and (min-width:760px) and (max-width:979px) {
+
+    article.grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.3rem;
+    }
+}
+
+/* ************************************
+media queries pour mobile home
+****************************************/
+@media screen and (max-width:759px) {
+
+    header.header {
+        flex-direction: column;
+        max-width: 500px;
+        margin-inline: auto;
+    }
+
+    ul.navbar {
+        flex-direction: column;
+    }
+
+
+    section.wrap {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    main.main {
+        max-width: 500px;
+        margin-inline: auto;
+    }
+
+    div.flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.newletter {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ************************************
+media queries pour mobile galerie
+****************************************/
+@media screen and (max-width:759px) {
+
+    article.grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.3rem;
+    }
+    article.card{
+        flex-basis: 100%;
+    }
+    section.card1,
+    section.card2 {
+   text-align: center;
+   flex-basis: 100%;
+    }
+}
