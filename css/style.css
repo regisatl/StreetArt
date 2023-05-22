@@ -401,6 +401,10 @@ media queries pour mobile galerie
         margin-inline: auto;
     }
 
+    article.grid {
+       justify-items: center;
+    }
+
     article.card {
         flex-basis: 100%;
     }
